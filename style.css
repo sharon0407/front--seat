@@ -8,13 +8,13 @@
 body {
     background-color: #f0f4f8;
     color: #1e293b;
-    padding-botton: 40px;
+    padding-bottom: 40px;
 }
 
 .app-header {
     background: linear-gradient(135eg, #0f172a, #1e3a8a);
     color: #ffffff
-    text-align: center;
+    text-align center;
     padding: 20px 15px;
     border-bottom: 4px solid #facc15;
 }
@@ -38,7 +38,7 @@ body {
 
 .card {
     background: #ffffff;
-    border-raduis: 12px;
+    border-radius: 12px;
     padding: 16px;
     margin-bottom: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
@@ -57,7 +57,7 @@ body {
     border: 2px solid #cbd5e1;
     border-radius: 8px;
     font-size: 1rem;
-    background color: #f8fafc;
+    background-color:  #f8fafc;
     font-weight: 600;
 }
 
@@ -69,7 +69,7 @@ body {
     background-color: #fef9c3;
     border: 1px solid #facc;
     padding: 10px 14px;
-    border-raduis: 8px;
+    border-radius: 8px;
     color: #854d0e;
 }
 
@@ -78,13 +78,13 @@ body {
 }
 
 .taxi-full banner {
-    background color: #16a34a;
+    background-color: #16a34a;
     color: #ffffff;
     text-align: center;
     font-weight: 800;
     font-size: 1.15rem;
     padding: 14px;
-    border-raduis: 10px;
+    border-radius: 10px;
     margin-bottom: 16px;
     box-shadow: 0 4px 12px rgba(22, 163, 74, 0.35);
     animation: pulse 1.5s infinite;
@@ -100,7 +100,7 @@ body {
     100%{transform: scale(1);}
 }
 
-//driver live dashboard//
+driver live dashboard/
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -137,7 +137,7 @@ body {
 
 .form-row {
     display: grid;
-    grid-template-column: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 12px;
 }
 
@@ -152,7 +152,7 @@ select, input {
     width: 100%;
     padding: 12px;
     border: 1px solid #cbd5e1;
-    border-raduis: 8px;
+    border-radius: 8px;
     font-size: 1rem;
 }
 
@@ -162,7 +162,7 @@ select, input {
     background-color: #1e3a8a;
     color: #ffffff;
     border: none;
-    border-raduis: 8px;
+    border-radius: 8px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -170,10 +170,10 @@ select, input {
 }
 
 .btn-primary:hover{
-    background color:  #1d4ed8;
+    background-color:  #1d4ed8;
 }
 
-//row status cards//
+row status cards/
 .section-header {
     display: flex;
     justify-content: space between;
@@ -186,7 +186,7 @@ select, input {
     color: white;
     border:none;
     padding: 6px 12px;
-    border-raduis: 6px;
+    border-radius: 6px;
     font-size: 0.85rem;
     font-weight: 600;
     cursor: pointer;
@@ -200,7 +200,7 @@ select, input {
 .row-card {
     background: #ffffff;
     border-left: 6px solid #94a3b8;
-    border-raduis: 10px;
+    border-radius: 10px;
     padding: 14px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
@@ -214,7 +214,7 @@ select, input {
     display: flex;
     justify-content: space-between;
     align-items: center
-    margin-bottom: 8px
+    margin-bottom 8px
 }
 
 .row-title {
@@ -225,7 +225,7 @@ select, input {
 .seat-pill {
     background-color: #e2e8f0;
     padding: 3px 8px;
-    border-raduis: 12px;
+    border-radius: 12px;
     font-size: 0.8rem;
     font-weight: 600;
 }
@@ -257,10 +257,10 @@ select, input {
     background-color: #fef08a;
     border: 1px solid #eab308;
     color: #854d0e;
-    paddind: 6px 10px;
-    border-raduis: 6px;
+    padding: 6px 10px;
+    border-radius: 6px;
     font-size: 0.8rem;
-    font weight: bold;
+    font-weight: bold;
     cursor: pointer;
     width: 100%
 }
