@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KZN Taxi Fare & Change Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1> KZN Taxi Manager</h1>
+        <p>Fast Fare & Change Manager</title>
+        </header>
+        
+        <main class="container">
+
+            //route selection and fare display
+            <section class="card route-card">
+                <label for="route select"><strong>Select route:</strong></label>
+                <select id="route-select">
+
+                </select>
+                <div class="fare-badge">
+                    <span>Fare per seat:</span>
+                    <strong id="fare-display">R0</strong>
+                </div>
+            </section>
+            
+            //Taxi alert banner when all 15 seats are full
+            <div id="taxi-full banner" class="full-banner hidden">
+                Taxi Full-LET'S GO!
+            </div>
+            
+            // Driver's live summary of the trip
+            <section class="card driver-dashboard">
+                <h2>Driver Live Summary</h2>
+                <div class="stats=grid">
+                    <div class="stat-box">
+                        <span class="stat-label">Seats Paid</span>
+                        <strong id="seats-paid" class="stat-value">0 / 15</strong>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Seats Paid</span>
+                        <strong id="seats paid" class="stat-value">0 / 15</strong
+                    <div class="stat-box">
+                        <span class="stat-label">Total Change Owed</span>
+                        <strong id="total-change" class="stat-value warning-text">R0</strong>
+                    </div>
+                </div>
+            </section>
+            
+            //front seat passenger payment logger
+            <section class="card payment-form-card">
+                <h2>Record Row Payment</h2>
+                <form id="payment-form">
+                    <div class="form-group">
+                        <label for="row-select">Select Taxi Row:</label>
+                        <select id="row-select" required>
+                            <option value="0">Front Seat (1 seat)</option>
+                            <option value="1"> Row 2 (4 seats)</option>
+                            <option value="2">Row 3 (3 seats)</option>
+                            <option value="3">Row 4 (3 seats)</option>
+                            <option value="4">Back row (4 seats)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="passengers-count">Passengers Paying:</label>
+                            <input type="number" id="cash given" min="1" max="4" value="1" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Add Payment</button>
+                </form>
+            </section>
+            
+            //Row by row breakdown
+            <section class="rows-section">
+                <div class="section-header">
+                    <h2>Row Status & Change</h2>
+                    <button id="reset-btn" class="btn-reset">New Trip</button>
+                </div>
+            </section>
+            
+        </main>
+        
+        <script src="script.js"></script>
+
+    </body>
+    </html>
+                    
+                    
+
+                           
+                        
+
+            
+
+
+
+
+
+                
+               

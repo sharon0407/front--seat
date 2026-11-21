@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #1e293b;
+    padding-botton: 40px;
+}
+
+.app-header {
+    background: linear-gradient(135eg, #0f172a, #1e3a8a);
+    color: #ffffff
+    text-align: center;
+    padding: 20px 15px;
+    border-bottom: 4px solid #facc15;
+}
+
+.app-header h1 {
+    font-size: 1.8rem;
+    color: #facc15;
+    margin-bottom: 4px;
+}
+
+.app-header p {
+    font-size: 0,85rem;
+    color: #cbd5e1;
+}
+
+.container {
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background: #ffffff;
+    border-raduis: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #0f17;
+}
+
+.route-card select{
+    width:100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    background color: #f8fafc;
+    font-weight: 600;
+}
+
+.fare-badge {
+    display: flex;
+    justify-content: space between;
+    align-items: center;
+    margin-top: 12px;
+    background-color: #fef9c3;
+    border: 1px solid #facc;
+    padding: 10px 14px;
+    border-raduis: 8px;
+    color: #854d0e;
+}
+
+.fare-badge strong {
+    font-size: 1.25rem;
+}
+
+.taxi-full banner {
+    background color: #16a34a;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.15rem;
+    padding: 14px;
+    border-raduis: 10px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.35);
+    animation: pulse 1.5s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes pulse {
+    0%{ transform: scale(1); }
+    50%{transform: scale(1,02); }
+    100%{transform: scale(1);}
+}
+
+//driver live dashboard//
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.stat-box {
+    background-color: #f8fa;
+    border: 1px solid #e2e8;
+    border-radius: 8px;
+    padding: 10px 6px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.stat-value{
+    font-size: 1.15rem;
+    color: #0f172a;
+}
+
+.warning-text {
+    color: #dc2626;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-column: 1fr 1fr;
+    gap: 12px;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+    color: #334155;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-raduis: 8px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border: none;
+    border-raduis: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover{
+    background color:  #1d4ed8;
+}
+
+//row status cards//
+.section-header {
+    display: flex;
+    justify-content: space between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn-reset {
+    background-color:#ef4444;
+    color: white;
+    border:none;
+    padding: 6px 12px;
+    border-raduis: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.rows-grid{
+    display: grid;
+    gap: 12px
+}
+
+.row-card {
+    background: #ffffff;
+    border-left: 6px solid #94a3b8;
+    border-raduis: 10px;
+    padding: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.row-card .row-complete {
+    border-left-color: #16a34a;
+    background-color: #f0fdf4;
+}
+
+.row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+    margin-bottom: 8px
+}
+
+.row-title {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.seat-pill {
+    background-color: #e2e8f0;
+    padding: 3px 8px;
+    border-raduis: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.row-complete .seat-pill{
+    background-color: #bbf7d0;
+    color: #166534;
+}
+
+.row-detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.change-badge {
+    font-weight: bold;
+    color: #dc2626;
+}
+
+.change-given {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.btn-clear-change {
+    margin-top: 8px;
+    background-color: #fef08a;
+    border: 1px solid #eab308;
+    color: #854d0e;
+    paddind: 6px 10px;
+    border-raduis: 6px;
+    font-size: 0.8rem;
+    font weight: bold;
+    cursor: pointer;
+    width: 100%
+}
+
+
