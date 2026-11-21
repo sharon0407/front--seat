@@ -126,19 +126,21 @@ function updateUI() {
         const card = document.createElement("div");
         card.classname = 'row-card ${isrowfull? "row-complete" : ""}';
 
-        card.innerHTML =
-        <div class = "row-top">
-        <span class="row-title>${row.name}</span>
-        <span class="seat-paid ${row.capacity}  paid</span>
+        card.innerHTML = '
+        <div class="row-top">
+        <span class="row-title">${row.name}</span>
+        <span class="seat-pill">${row.paidseats} / ${row.capacity} Paid</span>
         </div>
         <div class="row-details">
-            <span>cashcollected: <strong>R${row.cashcollected}</strong></span>
-            <span class="${row.changeowed > 0? 'change-badge' : 'change-given'}">
-                </span>
-                </div>
-                {row.changeowed > 0 ? '<button class="btn-clear-change" onclick="settlerowchange(${row.id})">Mark R${row.changeowed} change given</button>' : ''}
-                
-                rowscontainer.appendchild(card)
+            <span>cash collected: <stong>R${row.cashcollected}</strong></span>
+            ${row.changeowed > 0 ?'change owed: R${row.changeowed}' : 'No change owed!'}
+            </span>
+            </div>
+            ${row.changeowed > 0 ? '<button class="btn-clear-change" onclick="settlerowchange(${row.id})">Mark R${row.changeowed} change given</button>' : ''}
+
+                ';
+        
+                rowsContainer.appendchild(card);
     }
 }
 
